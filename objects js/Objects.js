@@ -5,6 +5,8 @@
 //  Display each property value in the console.
 // Sample Input:
 
+//own code===========
+
 // const car = {
 //   brand: "Toyota",
 //   model: "Camry",
@@ -22,6 +24,8 @@
 // Delete the name property.
 //  Then log the final object.
 
+//own code===========
+
 // let person={names:"sivaji",
 //     age:19,
 //     }
@@ -36,6 +40,8 @@
 // Task 3: Object with Methods
 // Problem:
 //  Create an object calculator with methods:
+
+//own code===========
 
 // let calculator = {
 //   add(a, b) {
@@ -55,6 +61,9 @@
 // Task 4: Nested Object Access
 // Problem:
 // //  Create an object student with nested details:
+
+//own code===========
+
 // const student = {
 //   name: "Anu",
 //   grade: "A",
@@ -75,6 +84,9 @@
 // Problem:
 //  Write a program to count how many properties are inside an object.
 // Example Input:
+
+//own code===========
+
 // const laptop = {
 //   brand: "HP",
 //   processor: "i5",
@@ -98,8 +110,17 @@
 // a.marks.math=100
 // console.log(a);
 
+// Concept:
+//  Demonstrates how Object.assign() performs a shallow copy — nested objects still share references.
+////code done by one by one 
+// because I print original copy in (object.assign) after not print original ressign 
+// but I before (object.assign) not assign .print in original  
+
 // Task 7: Merge Multiple Objects
 // Problem:
+
+//own code===========
+
 //  Combine the following objects into one single object:
 // const obj1 = { id: 101, name: "Alice" };
 // const obj2 = { age: 25 };
@@ -116,6 +137,8 @@
 // Modify an existing property
 // Delete a property
 
+//own code===========
+
 // const settings = {
 //   theme: "dark",
 //   fontSize: 14
@@ -129,6 +152,8 @@
 // Task 9: Object Destructuring
 // Problem:
 //  Use destructuring to extract values from this object and rename them:
+
+//own code===========
 
 // const user = {
 //   name: "Ravi",
@@ -153,33 +178,25 @@
 //  Write a function countProperties(obj) that counts all properties in a nested object (including nested levels).
 // Example Input:
 
+//own code===========
 
+// function countProperties(obj) {
+//   let count = 0;
+//   for (let key in obj) {
+//     count++;
+//     if (typeof obj[key] === "object" && obj[key] !== null) {
+//       count+=countProperties(obj[key])
+//     }
+//   }
+//   return count
+// }
 
-function countProperties(person){
-    let count=0;
-    for(let key in person)
-      console.log(key,person);
-      
-    for(let i=0;i<Object.keys(key).length;i++){
-        count++
-        // for(let j=i;j<){
-        //     count++
-        // }
-    }
-    return count
-}
+// const person = {
+//   name: "Kumar",
+//   details: {
+//     age: 30,
+//     contact: { phone: "12345", email: "test@mail.com" },
+//   },
+// };
 
-const person = {
-  name: "Kumar",
-  details: {
-    age: 30,
-    contact: { phone: "12345", email: "test@mail.com" },
-  },
-};
-console.log(countProperties(person));
-
-
-
-
-
-
+// console.log(countProperties(person));

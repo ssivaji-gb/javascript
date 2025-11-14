@@ -594,18 +594,18 @@
 
 //// Find the Maximum Value:Loop through [10, 3, 7, 20, 15] and find the largest number.
 
-let sum = [10, 3, 4, 7, 20, 15];
-let largest = sum[0];
-let smallest = sum[0];
-for ( let i = 0; i < sum.length; i++) {
-  if (sum[i] > largest) {
-    largest = sum[i];
-  } else if (sum[i] < smallest) {
-    smallest = sum[i];
-  }
-}
-console.log(largest);
-console.log(smallest);
+// let sum = [10, 3, 4, 7, 20, 15];
+// let largest = sum[0];
+// let smallest = sum[0];
+// for ( let i = 0; i < sum.length; i++) {
+//   if (sum[i] > largest) {
+//     largest = sum[i];
+//   } else if (sum[i] < smallest) {
+//     smallest = sum[i];
+//   }
+// }
+// console.log(largest);
+// console.log(smallest);
 
 // Double Each Number:Create a new array where each element in [2, 4, 6, 8] is doubled.
 // let arr=[2,4,6,8]
@@ -919,16 +919,30 @@ console.log(smallest);
 // console.log(sum)
 
 
+//remove the dupilicate number 
+
+// let a=[1,1,2,2,3,1,3,4,4,5,5,6,6,7,7,1]
+// let result =[];
+// let seen = {}
+// for(let i=0;i<a.length;i++){
+//   if(!seen[a[i]]){
+//     seen[a[i]] = true
+//     result.push(a[i])
+//   }
+// }
+// console.log(result)
 
 
-let arr = [1, 1, 2, 2, 3, 4, 4, 5, 6, 6, 1];
-let mt=arr[0]
-for (let i = 0; i < arr.length; i++) {
-  
-  if(arr[i]!=arr[i+1]){
-    mt=arr[i]
-  }
-}
-console.log(mt);
+//   Return only the words that have more than 4 characters.
+// Sample Input:
+
+// let words = ["sun", "planet", "moon", "star", "galaxy"];
+// let result = [];
+// for (let i = 0; i < words.length; i++) {
+//   if (words[i].length > 4) {
+//     result.push(words[i]);
+//   }
+// }
+// console.log(result);
 
 
